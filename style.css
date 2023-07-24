@@ -1,0 +1,390 @@
+dl, ol, ul {
+    gap: 50px;
+}
+.content-container{
+    height: 100vh;
+    width: 100%;
+    animation: animate 16s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+@keyframes animate {
+    0%{
+        background-image: url('assets/img/1.jpeg');
+    }
+    25%{
+        background-image: url('assets/img/2.jpeg');
+    }
+    50%{
+        background-image: url('assets/img/3.jpeg');
+    }
+    75%{
+        background-image: url('assets/img/4.jpeg');
+    }
+    100%{
+        background-image: url('assets/img/5.jpeg');
+    }
+}
+/* Navbar Customs */
+.custom-bg{
+    background-color: #bcb786;
+}
+.custom-font{
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.custom-font:hover{
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.custom-font::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.custom-font:hover::after{
+    opacity: 1;
+}
+.navbar-brand{
+    padding-left: 40px;
+}
+/* End Of NavBar Customs */
+
+/* Start of Discover Page */
+.content-element{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.content-element h1{
+    color: white;
+    font-size: 100px;
+    font-family: 'Bitter', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+}
+.content-element h3{
+    color: white;
+    font-size: 50px;
+    font-family: 'Bitter', serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+}
+.content-element p{
+    color: white;
+    padding-top: 45px;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+.content-element a{
+    display: inline-block;
+    color: white;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 25px;
+    margin-top: 35px;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: .5s;
+}
+.content-element a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateY(-8px);
+}
+.rounded-circle{
+    border-style: dashed;
+}
+.col-lg-6 h1{
+    font-family: 'Lumanosimo', cursive;
+    font-size: 50px;
+}
+.col-lg-6 p{
+    text-align: justify;
+    justify-content: center;
+    text-indent: 15px;
+}
+.col-lg-6 h2{
+    font-family: 'Lumanosimo', cursive;
+    font-size: 40px;
+}
+/* End Of Discover Page */
+/* Start of Places Page */
+.places-custom-font{
+    font-family: 'Lumanosimo', cursive;
+    letter-spacing: 2px;
+    padding-top: 25px;
+}
+.font-p{
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    color: rgb(56, 53, 53);
+}
+.card-title, .footer h3{
+    font-family: 'Lumanosimo', cursive;
+}
+.owl-carousel .card{
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.owl-carousel .card img{
+    border-top-left-radius: 40px;
+}
+#ModalLabel, .modal-body h3{
+    color: white;
+}
+.button{
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    border: none;
+    transition: 0.5s;
+}
+.button:hover{
+    background: transparent;
+    transform: translateX(8px); 
+}
+.rounded-circle{
+    border-color: #000 !important;
+}
+.carousel-item img{
+    border: none;
+    border-radius: 25px;
+}
+/* Modal Places */
+.modal-header{
+    align-items: center;
+}
+.modal-title {
+    margin-left: 40%;
+}
+.modal-footer a{
+    width: 100%;
+    text-decoration: none;
+}
+.modal-title, .modal-body h3{
+    font-family: 'Lumanosimo', cursive;
+}
+/* End of Places Page */
+/* Start of Stay Page */
+.content-container-3{
+    padding: 55px;
+}
+.content-element-3 h3{
+    font-family: 'Bitter', serif;
+    font-size: 60px;
+}
+.content-element-3 p{
+    font-size: 22px;
+    /* width: 50%; */
+    padding-top: 35px;
+    /* width: 60%; */
+}
+.custom-font-2{
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+}
+.custom-font-2:hover{
+    color: white !important;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* End of Stay Page */
+
+/* Start of Footer */
+.form{
+    margin: -20px;
+    padding-left: 120px;
+    padding: 15px;
+}
+.form-text{
+    width: 100%;
+    height: 0;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.form-text-msg{
+    width: 100%;
+    height: 115px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    padding: 25px;
+}
+.form-text-button{
+    width: 80%;
+    margin-left: 43px;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    padding: 5px;
+}
+.form-text-button:hover{
+    background-color: #B68562;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.list-group-item-element{
+    text-decoration: none;
+    color: black;
+}
+.list-group-item-element:hover{
+    color: white;
+    transition: 0.5s;
+}
+/* End of footer */
+
+/* Start of Page 2  */
+/* Start of Navbar Page 2 */
+.active{
+    color: white !important;
+}
+/* End Of NavBar Page 2 */
+
+/* Hotel Page */
+.hotel-row{
+    width: 100;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+}
+.hotel-content-element{
+    position: absolute;
+    bottom: 20%;
+    right: 2%;
+    text-align: center;
+    text-shadow: black -10px -5px 5px;
+}
+.hotel-content-element h1{
+    color: white;
+    font-family: 'Bitter', serif;
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-weight: bold;
+} 
+.hotel-content-element p{
+    color: white;
+    font-size: 30px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+/* End of Hotel Page */
+
+/* Start of Gallery Page */
+.gallery-row{
+    width: 100;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+}
+.gallery-content-element{
+    position: absolute;
+    bottom: 24%;
+    right: 2%;
+    text-align: center;
+    text-shadow: black -3px -1px 3px; 
+}
+.gallery-content-element h1{
+    color: white;
+    font-family: 'Bitter', serif;
+    font-size: 67px;
+    letter-spacing: 5px;
+    font-weight: bold;
+} 
+.gallery-content-element p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+/* End of Gallery Page */
+
+/* Start of Contact Page */
+.contact-row{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact-col{
+    padding-top: 100px;
+}
+.contact-col h2{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+}
+.contact-col p{
+    color: white;
+    font-size: 22px;
+}
+.form-text-button{
+    width: 90%;
+    margin: 25px;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    padding: 15px;
+}
+
+/* End Of Contact Page */
+/* Media Queries */
+@media screen and (max-width: 1524px) {
+    .content-element h1{font-size: 90px;}
+    .content-element-2 h1{font-size: 90px;}
+}
+@media screen and (max-width: 1390px) {
+    .content-element h1{font-size: 65px;}
+    .content-element-2 h1{font-size: 65px;}
+    .content-element-2 p{ font-size: 18px;}
+}
+@media screen and (max-width: 1043px) {
+    .content-element h1{font-size: 55px;}
+    .content-element-2 h1{font-size: 55px;}
+    .content-element-2 p{font-size: 16px;}
+}
+@media screen and (max-width: 907px) {
+    .content-element h1{font-size: 50px;}
+    .content-2{padding: 20px;}
+}
+@media screen and (max-width: 690px) {
+    .content-element-2 h1{font-size: 45px;}
+    .content-element-2 p{font-size: 14px;padding-top: 5px;}
+}
+@media screen and (max-width: 690px) {
+    .content-element-2 h1{font-size: 35px;}
+}
+@media screen and (max-width: 690px) {
+    .content-element-2 p{font-size: 12px;}
+}
